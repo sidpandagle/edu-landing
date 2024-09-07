@@ -2,15 +2,23 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="bg-white dark:bg-gray-900 md:min-h-[65vh] min-h-[45vh] flex items-end relative justify-center overflow-hidden">
-            <img src={"/designer.jpg"} className="hidden md:block absolute -top-20" alt="designerimage" />
-            <img src={"/designer-mobile.jpg"} className="absolute md:hidden -top-8" alt="designerimage" />
-            <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 z-10">
-                {/* <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">We invest in the world’s potential</h1> */}
-                <h1 className="mb-4 text-4xl sm:text-5xl font-extrabold tracking-tight leading-none text-gray-800 md:text-5xl ">Transforming Ideas into Visual Masterpieces</h1>
-                <p className="mb-8 sm:text-lg font-normal lg:text-xl sm:px-16 xl:px-48 400">Where Design Meets Destiny: Crafting Your Visual Masterpiece.</p>
+        <section className="flex gap-8 md:flex-row items-center justify-center text-neutral py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
+            <div className="md:w-1/2 h-full">
+                <div className=" text-3xl font-extrabold pb-4">
+                    Data Science and Business Analytics Course in Pune for FRESH MINDS
+                </div>
+                <div>
+                    In Association with:
+                    <img className="rounded-md h-12 -translate-x-2" src={"/nasscom.jpg"} alt="designerimage" />
+                    
+                    <span className="text-xs italic">National Association of Software and Service Companies</span>
+                </div>
+                <div className="text-lg pt-4">
+                    Guaranteed internship with <span className=" font-extrabold">100% placement assurance</span>, offering hands-on experience and career opportunities in your chosen field.
+                </div>
             </div>
+            <img className="md:w-1/2 hidden h-[300px] object-cover object-top md:block rounded-md" src={"/collegegirl.jpg"} alt="designerimage" />
         </section>
-        
+
     );
 }

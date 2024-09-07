@@ -1,21 +1,26 @@
-import CompanyOverview from "@/shared/components/CompanyOverview";
 import CTA from "@/shared/components/CTA";
-import FeaturedWork from "@/shared/components/FeaturedWork";
-import Footer from "@/shared/components/Footer";
 import Hero from "@/shared/components/Hero";
-import NavBar from "@/shared/components/NavBar";
-import Services from "@/shared/components/Services";
+import Achievements from "@/shared/components/Achievements";
+import Certification from "@/shared/components/Certification";
+import Features from "@/shared/components/Features";
+import MarketAnalysis from "@/shared/components/MarketAnalysis";
+import Recruiters from "@/shared/components/Recruiters";
+import SkillsCovered from "@/shared/components/SkillsCovered";
+import Numbers from "@/shared/components/Numbers";
 
 export default function Home() {
   return (
     <>
       <main>
         <Hero />
-        <Services />
-        <FeaturedWork />
-        <CompanyOverview />
+        <Achievements />
+        <Numbers />
+        <Features />
+        <Recruiters />
+        <SkillsCovered />
+        <MarketAnalysis />
+        <Certification />
         <CTA />
-
       </main>
     </>
   );

@@ -6,9 +6,9 @@ export default function Footer() {
             <footer className="footer p-10 container mx-auto items-center">
                 <aside>
                     <p>
-                        DesignForge
+                        <span className="text-3xl font-bold">NSARROWS</span>
                         <br />
-                        Providing reliable designs since 1992
+                        Empowering Your Future: Learn, Grow, and Achieve with Industry-Leading Courses
                     </p>
                 </aside>
                 <nav>

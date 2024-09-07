@@ -28,7 +28,7 @@ export default function CTA() {
         { src: deloitte_BIG, alt: 'deloitte_BIG' },
     ]
     return (
-        <section className="bg-white" id="contact-us">
+        <section className="bg-white" id="recruiters">
             <div className="pt-8 lg:pt-16 mx-auto ">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Our Trusted Recruiters</h2>
                 <div className="flex justify-center">

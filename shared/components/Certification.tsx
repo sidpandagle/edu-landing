@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Certification() {
     return (
-        <section className="bg-white" id="contact-us">
+        <section className="bg-white" id="certification">
             <div className="pt-8 lg:pt-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Certification</h2>
                 <div className="flex justify-center">

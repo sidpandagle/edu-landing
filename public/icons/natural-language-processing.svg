@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512">
+<g>
+	<g>
+		<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;M119.241,29.5H139.5c4.418,0,8,3.582,8,8v114c0,4.418-3.582,8-8,8h-124c-4.418,0-8-3.582-8-8v-114c0-4.418,3.582-8,8-8h67"/>
+		<g>
+			
+				<line style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="42.5" y1="62.5" x2="82.5" y2="62.5"/>
+			
+				<line style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="42.5" y1="94.5" x2="112.5" y2="94.5"/>
+			
+				<line style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="42.5" y1="126.5" x2="112.5" y2="126.5"/>
+		</g>
+		<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;M318,159.5H194c-4.418,0-8-3.582-8-8v-114c0-4.418,3.582-8,8-8h124c4.418,0,8,3.582,8,8v114C326,155.918,322.418,159.5,318,159.5z&#10;&#9;&#9;&#9;"/>
+		<g>
+			
+				<line style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="221" y1="62.5" x2="261" y2="62.5"/>
+			
+				<line style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="221" y1="94.5" x2="291" y2="94.5"/>
+			
+				<line style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="221" y1="126.5" x2="291" y2="126.5"/>
+		</g>
+		<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;M496.5,159.5h-124c-4.418,0-8-3.582-8-8v-114c0-4.418,3.582-8,8-8h124c4.418,0,8,3.582,8,8v114&#10;&#9;&#9;&#9;C504.5,155.918,500.918,159.5,496.5,159.5z"/>
+		<g>
+			
+				<line style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="399.5" y1="62.5" x2="439.5" y2="62.5"/>
+			
+				<line style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="399.5" y1="94.5" x2="469.5" y2="94.5"/>
+			
+				<line style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="399.5" y1="126.5" x2="469.5" y2="126.5"/>
+		</g>
+		<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;M256,450.296v-76.884c-1.899-28.147-19.564-40.912-45.405-40.912c-22.905,0-47.272,16.301-54.408,46.22&#10;&#9;&#9;&#9;c-0.48,1.715-1.763,3.081-3.439,3.643c-83.058,20.214-58.011,135.255,30.535,89.454c2.403-1.216,5.246-1.127,7.555,0.265&#10;&#9;&#9;&#9;C209.231,485.752,255.033,488.105,256,450.296z"/>
+		<g>
+			<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;&#9;M173.193,350.118c0,0,12.101,14.079,36.979,19.59"/>
+			<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;&#9;M123.57,398.944c0,0,13.4,10.145,27.211,31.797"/>
+			<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;&#9;M210.596,420.553c0,0,17.482,12.264,43.207,14.324"/>
+		</g>
+		<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;M374.825,387.775c63.751,29.821,36.366,126.701-46.109,84.041c-2.403-1.216-5.246-1.127-7.555,0.265&#10;&#9;&#9;&#9;c-18.392,13.671-64.194,16.024-65.162-21.785v-76.884c1.899-28.147,19.564-40.912,45.405-40.912&#10;&#9;&#9;&#9;c18.55,0,38.058,10.691,48.597,30.648"/>
+		<g>
+			<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;&#9;M338.807,350.118c0,0-12.101,14.079-36.979,19.59"/>
+			<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;&#9;M388.43,398.944c0,0-13.4,10.145-27.211,31.797"/>
+			<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;&#9;M301.404,420.553c0,0-17.482,12.264-43.207,14.324"/>
+		</g>
+		<g>
+			
+				<polyline style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="&#10;&#9;&#9;&#9;&#9;236,211 256,196 276,211 &#9;&#9;&#9;"/>
+			
+				<line style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="256" y1="199.07" x2="256" y2="300.605"/>
+			<g>
+				
+					<polyline style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="&#10;&#9;&#9;&#9;&#9;&#9;57.629,211 77.629,196 97.629,211 &#9;&#9;&#9;&#9;"/>
+				<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;&#9;&#9;M77.629,200.326c0,0-5.191,51.456,41.486,64.93c29.326,8.465,51.535,2.791,70.139,35.349"/>
+				
+					<polyline style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="&#10;&#9;&#9;&#9;&#9;&#9;454.371,211 434.371,196 414.371,211 &#9;&#9;&#9;&#9;"/>
+				<path style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="&#10;&#9;&#9;&#9;&#9;&#9;M434.371,200.326c0,0,5.191,51.456-41.486,64.93c-29.326,8.465-51.535,2.791-70.139,35.349"/>
+			</g>
+		</g>
+	</g>
+</g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</svg>

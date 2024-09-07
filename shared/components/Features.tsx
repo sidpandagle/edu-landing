@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Features() {
     return (
-        <section className="bg-white pt-8 lg:pt-16"  id="contact-us">
+        <section className="bg-white pt-8 lg:pt-16"  id="features">
             <div className="">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Your Roadmap to Success</h2>
                 <div className="flex justify-center">

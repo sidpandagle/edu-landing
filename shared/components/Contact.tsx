@@ -1,14 +1,13 @@
 'use client'
 import Image from "next/image";
-
+import React, { Component } from 'react';
 export default function Contact() {
     function submitForm(event: any) {
         event.preventDefault(); // Prevents the default form submission
-
-        const name = document && document.getElementById('name').value;
-        const email = document && document.getElementById('email').value;
-        const phone = document && document.getElementById('phone').value;
-        const graduationYear = document && document.getElementById('graduationYear').value;
+        const name = document && event.target.name.value;
+        const email = document && event.target.email.value;
+        const phone = document && event.target.phone.value;
+        const graduationYear = document && event.target.graduationYear.value;
 
         // Name validation
         if (name.length < 2) {
@@ -34,9 +33,11 @@ export default function Contact() {
             alert("Please select your graduation year.");
             return false;
         }
-
+        
+        alert("✨ Thank You, We're excited to reach out to you soon! 😊");
         // If all validations pass, you can proceed with form submission
-        document && document.getElementById('my_modal_2').showModal();
+        // let val = window && window.document.getElementById('my_modal_2');
+        // document.getElementById('my_modal_2')?.showModal();
         return true;
     }
 

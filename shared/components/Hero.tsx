@@ -10,11 +10,13 @@ export default function Hero() {
                 <div>
                     In Association with:
                     <img className="rounded-md h-12 -translate-x-2" src={"/nasscom.jpg"} alt="designerimage" />
-                    
+
                     <span className="text-xs italic">National Association of Software and Service Companies</span>
                 </div>
                 <div className="text-lg pt-4">
-                    Guaranteed internship with <span className=" font-extrabold">100% placement assurance</span>, offering hands-on experience and career opportunities in your chosen field.
+                    <span className=" font-extrabold"> Guaranteed internship with on-job training </span>
+                    {/* with 100% placement assurance,  */}
+                    offering hands-on experience and career opportunities in your chosen field.
                 </div>
             </div>
             <img className="md:w-1/2 hidden h-[300px] object-cover object-top md:block rounded-md" src={"/collegegirl.jpg"} alt="designerimage" />

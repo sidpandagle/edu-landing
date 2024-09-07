@@ -1,11 +1,11 @@
-import CTA from "@/shared/components/CTA";
+import Contact from "@/shared/components/Contact";
 import Hero from "@/shared/components/Hero";
-import Achievements from "@/shared/components/Achievements";
+import WhatWeSupport from "@/shared/components/WhatWeSupport";
 import Certification from "@/shared/components/Certification";
-import Features from "@/shared/components/Features";
+import Milestones from "@/shared/components/Milestones";
 import MarketAnalysis from "@/shared/components/MarketAnalysis";
 import Recruiters from "@/shared/components/Recruiters";
-import SkillsCovered from "@/shared/components/SkillsCovered";
+import Skills from "@/shared/components/Skills";
 import Numbers from "@/shared/components/Numbers";
 
 export default function Home() {
@@ -13,14 +13,14 @@ export default function Home() {
     <>
       <main>
         <Hero />
-        <Achievements />
+        <WhatWeSupport />
         <Numbers />
-        <Features />
+        <Milestones />
         <Recruiters />
-        <SkillsCovered />
+        <Skills />
         <MarketAnalysis />
         <Certification />
-        <CTA />
+        <Contact />
       </main>
     </>
   );

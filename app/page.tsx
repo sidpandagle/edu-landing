@@ -11,7 +11,7 @@ import Tools from "@/shared/components/Tools";
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
-  title: '>NSArrows | Data Science and Business Analytics Course in Pune',
+  title: 'NSArrows | Data Science and Business Analytics Course in Pune',
   description: 'Enroll in the Data Science and Business Analytics Course in Pune at NSArrows. Ideal for fresh minds aiming to master data skills and excel in the business world.',
   keywords: 'Data Science, Business Analytics, Course, Pune, Fresh Minds, NSArrows, Analytics, Data Skills, Business Data, Data Science Course',
   authors: [{ name: 'NSArrows' }],

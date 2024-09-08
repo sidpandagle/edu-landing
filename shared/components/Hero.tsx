@@ -9,17 +9,17 @@ export default function Hero() {
                 </div>
                 <div>
                     In Association with:
-                    <img className="rounded-md h-12 -translate-x-2" src={"/nasscom.jpg"} alt="designerimage" />
+                    <Image className="rounded-md -translate-x-2" src={"/nasscom.jpg"} alt="designerimage" height={50} width={200}/>
 
                     <span className="text-xs italic">National Association of Software and Service Companies</span>
                 </div>
                 <div className="text-lg pt-4">
                     <span className=" font-extrabold"> Guaranteed internship with on-job training </span>
                     {/* with 100% placement assurance,  */}
-                    offering hands-on experience and career opportunities in your chosen field.
+                    offering hands-on experience and career opportunities in your data science journey.
                 </div>
             </div>
-            <img className="md:w-1/2 hidden h-[300px] object-cover object-top md:block rounded-md" src={"/collegegirl.jpg"} alt="designerimage" />
+            <Image className="md:w-1/2 hidden h-[300px] object-cover object-top md:block rounded-md" src={"/collegegirl.jpg"} alt="designerimage" height={100} width={400} />
         </section>
 
     );

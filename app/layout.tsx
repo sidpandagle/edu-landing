@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/shared/components/NavBar";
 import Footer from "@/shared/components/Footer";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -29,7 +30,7 @@ export default function RootLayout({
         <NavBar></NavBar>
         {children}
         <a href="#navbar">
-          <img className="fixed right-0 bottom-0 z-10 m-8 w-10" src={"/gotop.png"} alt="" />
+          <Image className="fixed right-0 bottom-0 z-10 m-8 w-10 animate-bounce" src={"/gotop.png"} alt="gotop" height={40} width={40} />
         </a>
         <Footer />
       </body>

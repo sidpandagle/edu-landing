@@ -14,16 +14,16 @@ import research from '@/public/icons/research.svg'
 export default function Skills() {
     const logos = [
         { src: analysis, alt: 'analysis', title: 'Data Analysis' },
-        { src: chart, alt: 'chart', title: 'Chart' },
+        { src: chart, alt: 'chart', title: 'Statistics' },
         { src: deepLearning, alt: 'deepLearning', title: 'Deep Learning' },
         // { src: deepLearning1, alt: 'deepLearning1', title: 'deepLearning1' },
-        { src: forecast, alt: 'forecast', title: 'Forecast' },
+        { src: forecast, alt: 'forecast', title: 'Forecasting' },
         // { src: forecast1, alt: 'forecast1', title: 'forecast1' },
         // { src: forecastAnalytics, alt: 'forecastAnalytics', title: 'forecastAnalytics' },
         { src: intersect, alt: 'intersect', title: 'Ensemble Learning' },
         { src: machineLearning, alt: 'machineLearning', title: 'Machine Learning' },
         { src: naturalLanguageProcessing, alt: 'naturalLanguageProcessing', title: 'Natural Language Processing' },
-        { src: research, alt: 'research', title: 'Research' },
+        { src: research, alt: 'research', title: 'Market Analysis' },
     ]
     return (
         <section className="bg-white" id="skills">
@@ -32,28 +32,16 @@ export default function Skills() {
                 <div className="flex justify-center">
                     <p className="mb-2 lg:mb-2 font-light text-center text-gray-500 sm:text-xl">Comprehensive training on essential data science skills for real-world applications.</p>
                 </div>
-                <main className="relative py-8 flex flex-col justify-center overflow-hidden">
-                    <div className="w-full inline-flex flex-nowrap overflow-hidden md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-                        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-                            {logos.map((logo, index) => (
-                                <li key={index}>
-                                    <div className="flex flex-col text-center items-center justify-center">
-                                        <Image src={logo.src} width={100} height={100} alt={logo.alt} />
-                                        {logo.title}
-                                    </div>
-                                </li>
-                            ))}
-                        </ul>
-                        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
-                            {logos.map((logo, index) => (
-                                <li key={index}>
-                                    <div className="flex flex-col items-center justify-center">
-                                        <Image src={logo.src} width={100} height={100} alt={logo.alt} />
-                                        {logo.title}
-                                    </div>
-                                </li>
-                            ))}
-                        </ul>
+                <main className="relative py-8 flex md:flex-row flex-col justify-center overflow-hidden mx-auto max-w-screen-lg">
+                    <div className="grid md:grid-cols-4 grid-cols-2 md:gap-8 gap-4">
+                        {logos.map((logo, index) => (
+                            <div key={index}>
+                                <div className="flex flex-col text-center items-center justify-center">
+                                    <Image src={logo.src} width={80} height={80} alt={logo.alt} />
+                                    <div className="mt-2">{logo.title}</div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </main>
             </div>

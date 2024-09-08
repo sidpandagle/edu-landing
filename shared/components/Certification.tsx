@@ -8,8 +8,8 @@ export default function Certification() {
                 <div className="flex justify-center">
                     <p className="lg:mb-4 font-light text-center text-gray-500 sm:text-xl">Earn a certification that is recognized by industry leaders</p>
                 </div>
-                <div className="space-y-8">
-                    <img src="/certificate.png" alt="" />
+                <div className="space-y-8 flex justify-center items-center">
+                    <Image src="/certificate.png" alt="certificate" height={400} width={600} />
                 </div>
             </div>
         </section>

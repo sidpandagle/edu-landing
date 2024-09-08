@@ -1,31 +1,19 @@
 import Image from "next/image";
-import AMZN_BIG from '@/public/company_logos/AMZN_BIG.svg'
-import CTSH_BIG from '@/public/company_logos/CTSH_BIG.svg'
-import DXC_BIG from '@/public/company_logos/DXC_BIG.svg'
-import HON_BIG from '@/public/company_logos/HON_BIG.svg'
-import IBM from '@/public/company_logos/IBM.svg'
-import INFY from '@/public/company_logos/INFY.svg'
-import KNEBV from '@/public/company_logos/KNEBV.HE.png'
-import LTIM from '@/public/company_logos/LTIM.NS_BIG.svg'
-import ORCL_BIG from '@/public/company_logos/ORCL_BIG.svg'
-import TCS from '@/public/company_logos/TCS.NS.png'
-import TECHM from '@/public/company_logos/TECHM.NS_BIG.svg'
-import deloitte_BIG from '@/public/company_logos/deloitte_BIG.svg'
+import aster from '@/public/company_logos/aster.svg'
+import barclays from '@/public/company_logos/barclays.svg'
+import flora from '@/public/company_logos/flora.svg'
+import godrej from '@/public/company_logos/godrej.svg'
+import jpm from '@/public/company_logos/jpm.svg'
+import phronesis from '@/public/company_logos/phronesis.png'
 
-export default function CTA() {
+export default function Clients() {
     const logos = [
-        { src: AMZN_BIG, alt: 'AMZN_BIG' },
-        { src: CTSH_BIG, alt: 'CTSH_BIG' },
-        { src: DXC_BIG, alt: 'DXC_BIG' },
-        { src: HON_BIG, alt: 'HON_BIG' },
-        { src: IBM, alt: 'IBM' },
-        { src: INFY, alt: 'INFY' },
-        { src: KNEBV, alt: 'KNEBV' },
-        { src: LTIM, alt: 'LTIM' },
-        { src: ORCL_BIG, alt: 'ORCL_BIG' },
-        { src: TCS, alt: 'TCS' },
-        { src: TECHM, alt: 'TECHM' },
-        { src: deloitte_BIG, alt: 'deloitte_BIG' },
+        { src: aster, alt: 'aster' },
+        { src: barclays, alt: 'barclays' },
+        { src: flora, alt: 'flora' },
+        { src: godrej, alt: 'godrej' },
+        { src: jpm, alt: 'jpm' },
+        { src: phronesis, alt: 'phronesis' },
     ]
     return (
         <section className="bg-white" id="recruiters">

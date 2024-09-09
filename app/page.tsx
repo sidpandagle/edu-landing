@@ -9,6 +9,8 @@ import Skills from "@/shared/components/Skills";
 import Numbers from "@/shared/components/Numbers";
 import Tools from "@/shared/components/Tools";
 import type { Metadata } from 'next'
+import Testimonials from "@/shared/components/Testimonials";
+import Projects from "@/shared/components/Projects";
  
 export const metadata: Metadata = {
   title: 'NSArrows | Data Science and Business Analytics Course in Pune',
@@ -50,6 +52,8 @@ export default function Home() {
         <Tools />
         <MarketAnalysis />
         <Certification />
+        <Projects />
+        <Testimonials />
         <Contact />
       </main>
     </>

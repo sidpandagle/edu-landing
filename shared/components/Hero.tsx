@@ -4,9 +4,9 @@ export default function Hero() {
     return (
         <section className="flex gap-8 md:flex-row items-center justify-center text-neutral py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
             <div className="md:w-1/2 h-full">
-                <div className=" text-3xl font-extrabold pb-4">
+                <h1 className=" text-3xl font-extrabold pb-4">
                     Data Science and Business Analytics Course in Pune for FRESH MINDS
-                </div>
+                </h1>
                 <div>
                     In Association with:
                     <Image className="rounded-md -translate-x-2" src={"/nasscom.jpg"} alt="designerimage" height={50} width={200}/>

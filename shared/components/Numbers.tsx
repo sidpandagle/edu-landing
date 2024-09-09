@@ -20,7 +20,7 @@ export default function Numbers() {
                     <div className="rounded-lg  overflow-hidden ">
                         <div className="p-4">
                             <div className="text-5xl text-center pb-2 font-bold">6</div>
-                            <div className="text-sm text-center">Months Course <br /> <span className="text-xs">(Online / Offline)</span></div>
+                            <div className="text-sm text-center">Months Training <br /> <span className="text-xs">(Online / Offline)</span></div>
                         </div>
                     </div>
                     <div className="rounded-lg  overflow-hidden ">

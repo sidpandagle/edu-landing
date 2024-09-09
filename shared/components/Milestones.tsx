@@ -13,8 +13,8 @@ export default function Milestones() {
                 <div className="rounded-md border overflow-hidden shadow-md md:w-1/3">
                     <Image src="/people/Enroll at NSARROWS_1.jpg" className="designer" alt="designer" height={100} width={700}/>
                     <div className="p-4">
-                        <div className="text-lg text-black pb-2 font-semibold">Enroll at NSARROWS </div>
-                        <div className="text-sm text-slate-600">Join NSARROWS for Data Science Course In Pune and get a world of opportunities.</div>
+                        <div className="text-lg text-black pb-2 font-semibold">Join at NSARROWS </div>
+                        <div className="text-sm text-slate-600">Join NSARROWS for Data Science and Business Analytics Training In Pune with on-job Traning and get a world of opportunities.</div>
                     </div>
                 </div>
                 <div className="rounded-md border overflow-hidden shadow-md md:w-1/3">

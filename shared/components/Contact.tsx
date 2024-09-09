@@ -1,4 +1,5 @@
 'use client'
+import { error } from "console";
 import Image from "next/image";
 import React, { Component } from 'react';
 export default function Contact() {
@@ -33,8 +34,13 @@ export default function Contact() {
             alert("Please select your graduation year.");
             return false;
         }
-        
-        alert("✨ Thank You, We're excited to reach out to you soon! 😊");
+        let message = `Name: ${name}, Email: ${email}, Phone: ${phone}, Graduation Year: ${graduationYear}`;
+        fetch(`https://api.callmebot.com/whatsapp.php?phone=919146178765&text=${message}&apikey=1178605`).then((response) => {
+            console.log(response)
+            alert("✨ Thank You, We're excited to reach out to you soon! 😊");
+        },error => {
+            alert("✨ Thank You, We're excited to reach out to you soon! 😊");
+        })
         // If all validations pass, you can proceed with form submission
         // let val = window && window.document.getElementById('my_modal_2');
         // document.getElementById('my_modal_2')?.showModal();
@@ -53,7 +59,7 @@ export default function Contact() {
                 <div className="flex justify-center">
                     <p className="mb-4 lg:mb-4 font-light text-center text-gray-500 sm:text-">Have questions? Reach out for support and guidance on your data science journey!</p>
                 </div>
-                <form action="#" className="space-y-8"  onSubmit={submitForm}>
+                <form action="#" className="space-y-8" onSubmit={submitForm}>
                     <div>
                         <label className="block text-sm font-medium text-gray-900">Name</label>
                         <input type="text" id="name" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="John Doe" required />

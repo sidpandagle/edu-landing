@@ -1,8 +1,69 @@
 import Image from "next/image";
 
 export default function Testimonials() {
+    let testimonials = [
+        {
+            name: 'Rudranee Kavthekar',
+            designation: 'Tech Lead, Tata Technologies',
+            testimonial: 'Yogesh was my instructor for Business Analytics, R and Tableau. He has very strong domain knowledge, with a friendly approach and open to doubts and discussion. His hands-on approach to problem solving and simplifying concepts so that a person with zero background can also grasp data science concepts is very good. A very informative and knowledgeable person and fun to work with.',
+            image: '',
+        },
+        {
+            name: 'Pooja Joshi',
+            designation: 'Analyst, Capgemini',
+            testimonial: 'Yogesh sir is such a perfect trainer..he will not only teach you the complex concepts of analytics with great ease but also will train you how to think and develop your thought process as per the industry needs. His sessions are always full of knowledge, simple and thorough discussions of concepts and fun..of course bcz its Yogesh.',
+            image: '',
+        },
+        {
+            name: 'Ashish Jahagirdar',
+            designation: 'Sr. Manager, FCA',
+            testimonial: 'Yogesh Singh is Technically very sound when it comes to applying business analytics techniques to actual business bottlenecks. His enthusiasm to solve business problem statement is commendable, he is very good at using tools like R and python. Your assignments and classroom trainings have really helped me to grow technically and professionally in my career.',
+            image: '',
+        },
+        {
+            name: 'Derrick Braganza',
+            designation: 'Program Manager Analytics, Shoppers Stop',
+            testimonial: 'What can I say but simply OUTSTANDING. First day of class is a good memory of how you drew away my fears and made me feel comfortable and that we could do it. Simple everyday examples shared making the most complex algorithms look so easy. You have taken time off your busy schedules and replied to us even on subjects that you haven’t taught us. Thank you !!',
+            image: '',
+        },
+        {
+            name: 'Saranya Srinivasa Raghavan',
+            designation: 'Business Analyst',
+            testimonial: 'Yogesh was my Business Analytics trainer.The way he dealt with the concept was so pragmatic. All his classes have been Industrial Oriented. He is a person with a lot of adequate knowledge in the field of data science which made the sessions very interesting and interactive .He made sure the sessions were clear for each and every one of us and never hesitated to go for extra session when needed. I feel so pleased to be trained by Yogesh. Professional,Helpful and Friendly are few adjectives to describe him.',
+            image: '',
+        },
+        {
+            name: 'Jivitesh Varma',
+            designation: 'Sr. Risk Analyst, Citibank',
+            testimonial: 'Yogesh is a detail oriented person with a strategic outlook and new ideas which he always managed to develop as per the need of the hour. An excellent mentor for Data Science to work with/under and who provides you an opportunity to learn every spur of the moment with unconventional ways and forms.',
+            image: '',
+        },
+        {
+            name: 'Aman Sharma',
+            designation: 'Senior Analyst, eClerx',
+            testimonial: 'I had a 1 month course on R Programming conducted by my company. Yogesh sir was my trainer. His way of teaching is fabulous, straight forward and understandable. After his training my knowledge on R programming has grown from nothing to a pretty confident level. Thank you so much sir for training me. Hope we stay in touch and I keep learning more and more from you.',
+            image: '',
+        },
+        {
+            name: 'Nabanita Kar',
+            designation: 'BI Technology Lead, Globant',
+            testimonial: 'Yogesh is a very learned faculty.His style of teaching is very easy to understand and highly appreciable .He is very strong in his domain knowledge and has a practical approach of solving cases. A rare combination is a friendly,learned faculty with assertive nature and he is one of them. I am privileged to have got a chance to enhance my intellect on business analytics from a highly experienced and progressive faculty like him.',
+            image: '',
+        },
+        {
+            name: 'Makarand Mahalle',
+            designation: 'Data Science Intern, Holga Tech Pvt Ltd.',
+            testimonial: 'I was trained by Yogesh on Data science. It was a wonderful learning experience. Yogesh is best at what he does. He is been a great teacher and mentor. I’d like to take an opportunity to appreciate his teaching skills.',
+            image: '',
+        },
+        {
+            name: 'Priyanka Vipin Tharayil',
+            designation: 'Business Analyst, John Deere',
+            testimonial: 'Yogesh Sir has taught us Data Analytics course and I have high regards for his knowledge on this subject, interest on learning & sharing trends in analytics and ability to resolve queries.',
+            image: '',
+        },
+    ]
     return (
-
         <div className="bg-white">
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
                 <div className="mx-auto max-w-screen-sm">
@@ -10,68 +71,30 @@ export default function Testimonials() {
                     <p className="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl ">Here's why we're the best in Pune for Data Science</p>
                 </div>
                 <section className="bg-white">
-                    <div className="container px-6 mx-auto">
-                        <section className="grid grid-cols-1 gap-8 xl:mt-12 lg:grid-cols-2 xl:grid-cols-2">
-                            
-
-                            <div className="p-4 border rounded-lg flex flex-col justify-between shadow-md">
-                                <p className="leading-loose text-gray-500 text-left text-sm ">
-                                    “I've been fortunate to learn from Yogesh during my Data Science journey. His extraordinary mentor skills are seamlessly paired with his profound knowladge and passion for the discipline. Over years of professional experience, he developed afficient ways to explain complex subjects without trivialization. Equally important is that he stays on top of all new developments, helping his students navigate the constantly growing and chenging landscape of Data Science in the most practical and effective ways.”
-                                </p>
-
-                                <div className="flex justify-end items-center -mx-2">
-                                    {/* <Image height={100} width={100} className="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-300 dark:ring-gray-700" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt=""/> */}
-
-                                        <div className="mx-2 text-left">
-                                            <h1 className="font-semibold text-gray-800 text-right ">Milena Z. Fisher</h1>
-                                            <span className="text-sm text-gray-500">(Ph.D. Philosopher Mäetische scholar), Data Scientist</span>
+                    <section className="">
+                        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                {testimonials.map((item, index) => {
+                                    return (
+                                        <div key={index} className="swiper-slide group bg-white border border-solid h-auto border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-indigo-600 slide-active:border-indigo-600 h-full flex flex-col justify-between">
+                                            <p
+                                                className="text-sm md:text-[16px] text-left text-gray-500 leading-8 transition-all duration-500 mb-9 group-hover:text-gray-800">
+                                                {item.testimonial}
+                                            </p>
+                                            <div className="flex items-center gap-5">
+                                            <img className="h-16 w-16 rounded-full" src={"/testimonials/" + (index + 1) + ".jpg"} alt={index.toString()} />
+                                                <div className="">
+                                                    <h5 className="text-gray-900 text-left font-medium transition-all duration-500  group-hover:text-indigo-600 swiper-slide-active:text-indigo-600">{item.name}</h5>
+                                                    <span className="text-sm leading-6 text-left text-gray-500">{item.designation}</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                </div>
+                                    );
+                                }
+                                )}
                             </div>
-                            <div className="p-4 border rounded-lg flex flex-col justify-between shadow-md">
-                                <p className="leading-loose text-gray-500 text-left text-sm ">
-                                    “Yogesh was my trainer and mentor during my Data Science and Business Analytics certificate. He was so very knowledgeable, and because of his industry experience he was able to offer us plenty of "how this is done in reat life" insights. He was very pleasant to have as a trainer and very patient, helping us all understand these new concepts by using really clear language and explanations. He alway's managed to find a crisp, pertinent explanation that cleared up our confusion.”
-                                </p>
-
-                                <div className="flex justify-end items-center -mx-2">
-                                    {/* <Image height={100} width={100} className="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-300 dark:ring-gray-700" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt=""/> */}
-
-                                        <div className="mx-2 text-left">
-                                            <h1 className="font-semibold text-gray-800 text-right ">Victoria Morgan</h1>
-                                            <span className="text-sm text-gray-500">Data-driver Storyteller & Communications Consultant</span>
-                                        </div>
-                                </div>
-                            </div>
-                            <div className="p-4 border rounded-lg flex flex-col justify-between shadow-md">
-                                <p className="leading-loose text-gray-500 text-left text-sm ">
-                                    “Yogesh stands out as a mentor in the No Code Al course with his unique ability to simplify.complex concepts through easy-to-understand metaphors, making learning engaging and far from boring. His deep industry experience enriches his classes with real-world insights, bringing theories to life. Yogesh's approachable and patient teaching style has significantly enhanced my understanding of Al, always ensuring his explanations are olear and relevant. His dedication to staying updated with the latest developments in the field ensures his students are well-prepared for the future. I highly recommend Yogesh to anyone looking to make strides in Al, for an educational experience that is both enlightening and enjoyable.”
-                                </p>
-
-                                <div className="flex justify-end items-center -mx-2">
-                                    {/* <Image height={100} width={100} className="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-300 dark:ring-gray-700" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt=""/> */}
-
-                                        <div className="mx-2 text-left">
-                                            <h1 className="font-semibold text-gray-800 text-right ">Mohsen Hashemi</h1>
-                                            <span className="text-sm text-gray-500">Supply Cal Purchasing Spol</span>
-                                        </div>
-                                </div>
-                            </div>
-                            <div className="p-4 border rounded-lg flex flex-col justify-between shadow-md">
-                                <p className="leading-loose text-gray-500 text-left text-sm ">
-                                    “Yogesh was an excellent Data Science mentor and concisely explained numerous learning models as well as bow to apply them to real work data, He went the extra mile for students working on their own projects and made sure to explain how they could deploy the models we learned for their own needs. Lastly, he kept things brief. Often instructors get bogged down in minimally important details that aren't relevant in real world applications. Yogesh made sure to inform us which aspects of our models were commonly deployed in real world settings as well as what details held little relevance. Thanks Yogesh!”
-                                </p>
-
-                                <div className="flex justify-end items-center -mx-2">
-                                    {/* <Image height={100} width={100} className="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-300 dark:ring-gray-700" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt=""/> */}
-
-                                        <div className="mx-2 text-left">
-                                            <h1 className="font-semibold text-gray-800 text-right ">Anatole Colevas</h1>
-                                            <span className="text-sm text-gray-500">Date Analyst Database Management Pallys Modeling and Visualizalice</span>
-                                        </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
+                        </div>
+                    </section>
                 </section>
             </div>
         </div>

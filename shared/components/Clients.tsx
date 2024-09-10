@@ -1,19 +1,19 @@
 import Image from "next/image";
-import aster from '@/public/company_logos/aster.svg'
-import barclays from '@/public/company_logos/barclays.svg'
-import flora from '@/public/company_logos/flora.svg'
-import godrej from '@/public/company_logos/godrej.svg'
-import jpm from '@/public/company_logos/jpm.svg'
-import phronesis from '@/public/company_logos/phronesis.png'
+// import aster from '@/public/company_logos/aster.svg'
+// import barclays from '@/public/company_logos/barclays.svg'
+// import flora from '@/public/company_logos/flora.svg'
+// import godrej from '@/public/company_logos/godrej.svg'
+// import jpm from '@/public/company_logos/jpm.svg'
+// import phronesis from '@/public/company_logos/phronesis.png'
 
 export default function Clients() {
     const logos = [
-        { src: aster, alt: 'aster' },
-        { src: barclays, alt: 'barclays' },
-        { src: flora, alt: 'flora' },
-        { src: godrej, alt: 'godrej' },
-        { src: jpm, alt: 'jpm' },
-        { src: phronesis, alt: 'phronesis' },
+        { src: '/company_logos/aster.svg', alt: 'aster' },
+        { src: '/company_logos/barclays.svg', alt: 'barclays' },
+        { src: '/company_logos/flora.svg', alt: 'flora' },
+        { src: '/company_logos/godrej.svg', alt: 'godrej' },
+        { src: '/company_logos/jpm.svg', alt: 'jpm' },
+        { src: '/company_logos/phronesis.png', alt: 'phronesis' },
     ]
     return (
         <section className="bg-white" id="recruiters">
@@ -27,14 +27,14 @@ export default function Clients() {
                         <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                             {logos.map((logo, index) => (
                                 <li key={index}>
-                                    <Image src={logo.src} width={100} height={100} alt={logo.alt} />
+                                    <img src={logo.src} width={100} height={100} alt={logo.alt} />
                                 </li>
                             ))}
                         </ul>
                         <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                             {logos.map((logo, index) => (
                                 <li key={index}>
-                                    <Image src={logo.src} width={100} height={100} alt={logo.alt} />
+                                    <img src={logo.src} width={100} height={100} alt={logo.alt} />
                                 </li>
                             ))}
                         </ul>

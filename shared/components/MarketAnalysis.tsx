@@ -9,8 +9,8 @@ export default function CTA() {
                     <p className="mb-2 lg:mb-2 font-light text-center text-gray-500 sm:text-xl">Data science market analysis in 2024 and job opportunities with salaries offered</p>
                 </div>
                 <div className="space-y-8 flex flex-col md:flex-row gap-8 items-end">
-                    <Image src="/g1.png" className="md:w-1/2" alt="g1" height={400} width={400} />
-                    <Image src="/g2.png" className="md:w-1/2" alt="g2" height={400} width={400} />
+                    <img src="/g1.png" className="md:w-1/2" alt="g1" height={400} width={400} />
+                    <img src="/g2.png" className="md:w-1/2" alt="g2" height={400} width={400} />
                 </div>
             </div>
         </section>

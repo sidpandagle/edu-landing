@@ -75,7 +75,7 @@ export default function Contact() {
                     <div>
                         <label className="block text-sm font-medium text-gray-900">Graduation Year</label>
                         <select id="graduationYear" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" required>
-                            <option value="" disabled selected>Select your graduation year</option>
+                            <option value="2024" disabled selected>Select your graduation year</option>
                             {/* <option value="2025">2025</option> */}
                             <option value="2024" selected>2024</option>
                             <option value="2023">2023</option>

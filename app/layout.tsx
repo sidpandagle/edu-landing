@@ -30,7 +30,7 @@ export default function RootLayout({
         <NavBar></NavBar>
         {children}
         <a href="#navbar">
-          <Image className="fixed right-0 bottom-0 z-10 m-8 w-10 animate-bounce" src={"/gotop.png"} alt="gotop" height={40} width={40} />
+          <img className="fixed right-0 bottom-0 z-10 m-8 w-10 animate-bounce" src={"/gotop.png"} alt="gotop" height={40} width={40} />
         </a>
         <Footer />
       </body>

@@ -5,15 +5,15 @@ export default function NavBar() {
         <div className="border-b">
             <div id="navbar" className="container mx-auto p-4 md:p-6 flex gap-8 justify-between items-center">
                 <div>
-                    <Image src="/nsarrows.png" height={60} width={190} alt="nsarrows" />
+                    <img src="/nsarrows.png" height={60} width={190} alt="nsarrows" />
                 </div>
                 <div className="hidden md:flex gap-8">
-                    <a href="/#whatwesupport" className="cursor-pointer text-slate-600 hover:font-semibold hover:text-slate-800 w-48 text-center">What We Support</a>
-                    <a href="/#milestones" className="cursor-pointer text-slate-600 hover:font-semibold hover:text-slate-800 w-20 text-center">Milestones</a>
-                    <a href="/#skills" className="cursor-pointer text-slate-600 hover:font-semibold hover:text-slate-800 w-20 text-center">Skills</a>
-                    <a href="/#certification" className="cursor-pointer text-slate-600 hover:font-semibold hover:text-slate-800 w-20 text-center">Certification</a>
+                    <a href="/#whatwesupport" className="cursor-pointer text-slate-600 hover:font-semibold duration-200 hover:text-slate-800 w-48 text-center">What We Support</a>
+                    <a href="/#milestones" className="cursor-pointer text-slate-600 hover:font-semibold duration-200 hover:text-slate-800 w-20 text-center">Milestones</a>
+                    <a href="/#skills" className="cursor-pointer text-slate-600 hover:font-semibold duration-200 hover:text-slate-800 w-20 text-center">Skills</a>
+                    <a href="/#certification" className="cursor-pointer text-slate-600 hover:font-semibold duration-200 hover:text-slate-800 w-20 text-center">Certification</a>
                 </div>
-                <a href="/#contact-us" className="hidden md:flex cursor-pointer text-slate-600 hover:font-semibold hover:text-slate-800 w-24 text-center">Contact Us</a>
+                <a href="/#contact-us" className="hidden md:flex cursor-pointer text-slate-600 hover:font-semibold duration-200 hover:text-slate-800 w-24 text-center">Contact Us</a>
                 <div className="dropdown dropdown-end md:hidden z-20">
                     <div tabIndex={0} role="button" className="btn m-1">///</div>
                     <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">

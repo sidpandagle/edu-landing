@@ -1,29 +1,15 @@
 import Image from "next/image";
-import analysis from '@/public/icons/analysis.svg'
-import chart from '@/public/icons/chart.svg'
-import deepLearning from '@/public/icons/deep-learning.svg'
-import deepLearning1 from '@/public/icons/deep-learning(1).svg'
-import forecast from '@/public/icons/forecast.svg'
-import forecast1 from '@/public/icons/forecast(1).svg'
-import forecastAnalytics from '@/public/icons/forecast-analytics.svg'
-import intersect from '@/public/icons/intersect.svg'
-import machineLearning from '@/public/icons/machine-learning.svg'
-import naturalLanguageProcessing from '@/public/icons/natural-language-processing.svg'
-import research from '@/public/icons/research.svg'
 
 export default function Skills() {
     const logos = [
-        { src: analysis, alt: 'analysis', title: 'Data Analysis' },
-        { src: chart, alt: 'chart', title: 'Statistics' },
-        { src: deepLearning, alt: 'deepLearning', title: 'Deep Learning' },
-        // { src: deepLearning1, alt: 'deepLearning1', title: 'deepLearning1' },
-        { src: forecast, alt: 'forecast', title: 'Forecasting' },
-        // { src: forecast1, alt: 'forecast1', title: 'forecast1' },
-        // { src: forecastAnalytics, alt: 'forecastAnalytics', title: 'forecastAnalytics' },
-        { src: intersect, alt: 'intersect', title: 'Ensemble Learning' },
-        { src: machineLearning, alt: 'machineLearning', title: 'Machine Learning' },
-        { src: naturalLanguageProcessing, alt: 'naturalLanguageProcessing', title: 'Natural Language Processing' },
-        { src: research, alt: 'research', title: 'Market Analysis' },
+        { src: '/icons/analysis.svg', alt: 'analysis', title: 'Data Visualization' },
+        { src: '/icons/chart.svg', alt: 'chart', title: 'Statistics' },
+        { src: '/icons/deep-learning.svg', alt: 'deepLearning', title: 'Deep Learning' },
+        { src: '/icons/forecast.svg', alt: 'forecast', title: 'Forecasting' },
+        { src: '/icons/intersect.svg', alt: 'intersect', title: 'Ensemble Learning' },
+        { src: '/icons/machine-learning.svg', alt: 'machineLearning', title: 'Machine Learning' },
+        { src: '/icons/natural-language-processing.svg', alt: 'naturalLanguageProcessing', title: 'Natural Language Processing' },
+        { src: '/icons/research.svg', alt: 'research', title: 'Data Analysis' },
     ]
     return (
         <section className="bg-white" id="skills">
@@ -37,7 +23,7 @@ export default function Skills() {
                         {logos.map((logo, index) => (
                             <div key={index}>
                                 <div className="flex flex-col text-center items-center justify-center">
-                                    <Image src={logo.src} width={80} height={80} alt={logo.alt} />
+                                    <img src={logo.src} width={80} height={80} alt={logo.alt} />
                                     <div className="mt-2">{logo.title}</div>
                                 </div>
                             </div>

@@ -34,16 +34,39 @@ export default function Contact() {
             alert("Please select your graduation year.");
             return false;
         }
-        let message = `Name: ${name}, Email: ${email}, Phone: ${phone}, Graduation Year: ${graduationYear}`;
-        fetch(`https://api.callmebot.com/whatsapp.php?phone=919146178765&text=${message}&apikey=1178605`).then((response) => {
-            console.log(response)
-            alert("✨ Thank You, We're excited to reach out to you soon! 😊");
-        },error => {
-            alert("✨ Thank You, We're excited to reach out to you soon! 😊");
-        })
-        // If all validations pass, you can proceed with form submission
-        // let val = window && window.document.getElementById('my_modal_2');
-        // document.getElementById('my_modal_2')?.showModal();
+        // let message = `Name: ${name}, Email: ${email}, Phone: ${phone}, Graduation Year: ${graduationYear}`;
+
+        // Whatsapp API
+        // fetch(`https://api.callmebot.com/whatsapp.php?phone=919146178765&text=${message}&apikey=1178605`).then((response) => {
+        //     console.log(response)
+        //     alert("✨ Thank You, We're excited to reach out to you soon! 😊");
+        // },error => {
+        //     alert("✨ Thank You, We're excited to reach out to you soon! 😊");
+        // })
+
+        const url = 'https://pune.nsarrows.com/api.php?action=create';
+        const data = {
+            name: name,
+            phone: phone,
+            email: email,
+            graduation: graduationYear
+        };
+
+        try {
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }).then(() => {
+                alert("✨ Thank You, We're excited to reach out to you soon! 😊");
+            });
+
+        } catch (error) {
+            alert("Something went wrong, please contact administrator");
+        }
+
         return true;
     }
 

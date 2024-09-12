@@ -1,6 +1,16 @@
 import Image from "next/image";
+'use client'
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { useSwiper } from 'swiper/react';
+import 'swiper/css';
+import { useState } from "react";
 export default function Testimonials() {
+
+
+    const [my_swiper, set_my_swiper] = useState({});
+    const swiper = useSwiper();
+
     let testimonials = [
         {
             name: 'Rudranee Kavthekar',
@@ -68,31 +78,43 @@ export default function Testimonials() {
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
                 <div className="mx-auto max-w-screen-sm">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Testimonials</h2>
-                    <p className="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl ">Here's why we're the best in Pune for Data Science</p>
+                    <p className="mb-8 font-light text-gray-500 lg:mb-8 sm:text-xl ">Here's why we're the best in Pune for Data Science</p>
                 </div>
                 <section className="bg-white">
-                    <section className="">
-                        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                {testimonials.map((item, index) => {
-                                    return (
-                                        <div key={index} className="swiper-slide group bg-white border border-solid h-auto border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-indigo-600 slide-active:border-indigo-600 h-full flex flex-col justify-between">
+                    <section>
+                        <Swiper
+                            onInit={(ev) => {
+                                set_my_swiper(ev)
+                            }}
+                            slidesPerView={1}
+                            // onSlideChange={(i) => { changeSlider(i.realIndex) }}
+                            onSwiper={(swiper) => { }}
+                        >
+                            {testimonials.map((item, index) => {
+                                return (
+                                    <SwiperSlide key={index} >
+                                        <div className="swiper-slide group bg-white border border-solid h-auto border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full  slide-active:border-indigo-600 h-full flex flex-col justify-between">
                                             <p
-                                                className="text-sm md:text-[16px] text-left text-gray-500 leading-8 transition-all duration-500 mb-9 group-hover:text-gray-800">
+                                                className="text-sm md:text-[16px] text-left text-gray-500 leading-8 transition-all duration-500 mb-9 ">
                                                 {item.testimonial}
                                             </p>
                                             <div className="flex items-center gap-5">
-                                            <img className="h-16 w-16 rounded-full" src={"/testimonials/" + (index + 1) + ".jpg"} alt={index.toString()} />
+                                                <img className="h-16 w-16 rounded-full" src={"/testimonials/" + (index + 1) + ".jpg"} alt={index.toString()} />
                                                 <div className="">
-                                                    <h5 className="text-gray-900 text-left font-medium transition-all duration-500  group-hover:text-indigo-600 swiper-slide-active:text-indigo-600">{item.name}</h5>
+                                                    <h5 className="text-gray-900 text-left font-medium transition-all duration-500   swiper-slide-active:text-indigo-600">{item.name}</h5>
                                                     <span className="text-sm leading-6 text-left text-gray-500">{item.designation}</span>
                                                 </div>
                                             </div>
                                         </div>
-                                    );
-                                }
-                                )}
-                            </div>
+                                    </SwiperSlide>
+                                );
+                            }
+                            )}
+
+                        </Swiper>
+                        <div className="flex justify-center gap-8">
+                            <div onClick={() => { my_swiper?.slidePrev(); }}> <img className="h-12 w-12 rotate-180" src="/arrow.svg" alt="" /> </div>
+                            <div onClick={() => { my_swiper?.slideNext(); }}> <img className="h-12 w-12" src="/arrow.svg" alt="" /> </div>
                         </div>
                     </section>
                 </section>

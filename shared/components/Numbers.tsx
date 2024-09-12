@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Numbers() {
     return (
-        <section className="text-white bg-neutral">
-            <div className=" flex gap-8 md:flex-row items-center justify-center  py-8 px-4 mx-auto max-w-screen-xl">
+        <section className=" mx-auto max-w-screen-xl">
+            <div className="text-white bg-neutral md:rounded-lg flex gap-8 md:flex-row items-center justify-center  py-8 md:px-4">
                 <div className="flex gap-8 flex-col md:flex-row justify-between">
                     <div className="rounded-lg  overflow-hidden ">
                         <div className="p-4">
@@ -20,7 +20,7 @@ export default function Numbers() {
                     <div className="rounded-lg  overflow-hidden ">
                         <div className="p-4">
                             <div className="text-5xl text-center pb-2 font-bold">6</div>
-                            <div className="text-sm text-center">Months Training <br /> <span className="text-xs">(Online / Offline)</span></div>
+                            <div className="text-sm text-center">Industrial Training <br /> <span className="text-xs">(Online / Offline)</span></div>
                         </div>
                     </div>
                     <div className="rounded-lg  overflow-hidden ">

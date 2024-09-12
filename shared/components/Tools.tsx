@@ -26,7 +26,7 @@ export default function Tools() {
     return (
         <section className="bg-white" id="recruiters">
             <div className="pt-8 lg:pt-16 mx-auto ">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Our Tools and Technologies</h2>
+                <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-center text-gray-900">Our Tools and Technologies</h2>
                 <div className="flex justify-center">
                     <p className="mb-2 lg:mb-2 font-light text-center text-gray-500 sm:text-xl">Empowering Innovation with Cutting-Edge Tools and Technologies</p>
                 </div>

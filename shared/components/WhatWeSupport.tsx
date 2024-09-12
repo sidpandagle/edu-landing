@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function WhatWeSupport() {
     return (
         <section className="text-neutral bg-white" id="whatwesupport">
-            <h2 className="pt-8 text-4xl tracking-tight font-extrabold text-center text-gray-900">What We Support</h2>
+            <h2 className="pt-8 text-3xl tracking-tight font-extrabold text-center text-gray-900">What We Support</h2>
             <div className=" flex gap-8 md:flex-row items-center justify-center text-neutral py-8 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-12">
                 <div className="flex gap-8 flex-col md:flex-row justify-between">
                     <div className="rounded-md border overflow-hidden shadow-md md:w-1/3">

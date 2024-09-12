@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Milestones() {
     return (
-        <section className="bg-white pt-4 lg:pt-8"  id="milestones">
+        <section className="bg-white pt-8"  id="milestones">
             <div className="">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Milestones</h2>
+                <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-center text-gray-900">Milestones</h2>
                 <div className="flex justify-center">
                     <p className="lg:mb-8 font-light text-center text-gray-500 sm:text-xl">Learning & Career Path For Data Science Course in Pune at NSARROWS</p>
                 </div>

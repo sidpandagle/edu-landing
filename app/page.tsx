@@ -44,8 +44,8 @@ export default function Home() {
     <>
       <main>
         <Hero />
-        <WhatWeSupport />
         <Numbers />
+        <WhatWeSupport />
         <Milestones />
         <Clients />
         <Skills />

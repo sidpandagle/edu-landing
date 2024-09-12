@@ -14,7 +14,7 @@ export default function Hero() {
                     <span className="text-xs italic">National Association of Software and Service Companies</span>
                 </div>
                 <div className="text-lg pt-4">
-                    <span className=" font-extrabold"> Guaranteed internship with on-job training </span>
+                    <span className=" font-extrabold"> Guaranteed internship with on-job industrial training </span>
                     {/* with 100% placement assurance,  */}
                     offering hands-on experience and career opportunities in your data science journey.
                 </div>

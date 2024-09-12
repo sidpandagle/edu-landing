@@ -18,26 +18,17 @@ export default function Clients() {
     return (
         <section className="bg-white" id="recruiters">
             <div className="pt-8 lg:pt-16 mx-auto ">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Our Clients</h2>
+                <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-center text-gray-900">Our Clients</h2>
                 <div className="flex justify-center">
                     <p className="mb-2 lg:mb-2 font-light text-center text-gray-500 sm:text-xl">Partnering with leading companies to connect you with exciting career opportunities.</p>
                 </div>
-                <main className="relative py-8 flex flex-col justify-center overflow-hidden">
-                    <div className="w-full inline-flex flex-nowrap overflow-hidden md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-                        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-                            {logos.map((logo, index) => (
-                                <li key={index}>
-                                    <img src={logo.src} width={100} height={100} alt={logo.alt} />
-                                </li>
-                            ))}
-                        </ul>
-                        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
-                            {logos.map((logo, index) => (
-                                <li key={index}>
-                                    <img src={logo.src} width={100} height={100} alt={logo.alt} />
-                                </li>
-                            ))}
-                        </ul>
+                <main className="py-8">
+                    <div className="flex md:flex-row flex-col items-center justify-center gap-16">
+                        {logos.map((logo, index) => (
+                            <div key={index}>
+                                <img src={logo.src} width={100} height={100} alt={logo.alt} />
+                            </div>
+                        ))}
                     </div>
                 </main>
             </div>

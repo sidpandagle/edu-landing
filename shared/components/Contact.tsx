@@ -47,7 +47,7 @@ export default function Contact() {
         const url = 'https://pune.nsarrows.com/api.php?action=create';
         const data = {
             name: name,
-            phone: phone,
+            phone: phone.toString(),
             email: email,
             graduation: graduationYear
         };
@@ -78,7 +78,7 @@ export default function Contact() {
     return (
         <section className="bg-white" id="contact-us">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>
+                <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>
                 <div className="flex justify-center">
                     <p className="mb-4 lg:mb-4 font-light text-center text-gray-500 sm:text-">Have questions? Reach out for support and guidance on your data science journey!</p>
                 </div>
@@ -93,7 +93,7 @@ export default function Contact() {
                     </div>
                     <div>
                         <label className="block text-sm font-medium text-gray-900">Phone</label>
-                        <input type="text" id="phone" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="+91 9123456789" required />
+                        <input type="number" id="phone" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="+91 9123456789" required />
                     </div>
                     <div>
                         <label className="block text-sm font-medium text-gray-900">Graduation Year</label>

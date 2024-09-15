@@ -129,7 +129,7 @@ export default function Testimonials() {
                             )}
 
                         </Swiper>
-                        <div className="flex justify-end gap-2 md:mt-4">
+                        <div className="flex justify-end gap-2 md:mt-4 md:mr-4">
                             <div className="text-slate-700 cursor-pointer hover:text-white border border-slate-700 hover:bg-slate-800   font-medium rounded-lg text-3xl h-10 w-10 flex justify-center items-center text-center me-2 mb-2 dark:border-slate-500 duration-200  dark:text-slate-500  dark:focus:ring-slate-800" onClick={() => { my_swiper.slidePrev(); }}>
                                 <button type="button">{'<'}</button>
                             </div>

@@ -30,9 +30,9 @@ export default function RootLayout({
         <NavBar></NavBar>
         {children}
         <a href="#navbar">
-          <img className="fixed right-0 bottom-0 z-10 m-8 w-10 animate-bounce" src={"/gotop.png"} alt="gotop" height={40} width={40} />
+          <img className="fixed right-0 bottom-0 z-10 m-8 w-8 animate-bounce" src={"/gotop.png"} alt="gotop" height={40} width={40} />
         </a>
-        <a href="https://wa.me/919552527932" target="_blank">
+        <a href={"https://wa.me/919552527932"} target="_blank">
           <img className="fixed left-0 bottom-0 z-10 m-8 w-10" src={"/whatsapp.svg"} alt="gotop" height={40} width={40} />
         </a>
         <Footer />

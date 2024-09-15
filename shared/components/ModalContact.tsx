@@ -1,8 +1,9 @@
 'use client'
 import { error } from "console";
+import { HtmlContext } from "next/dist/server/future/route-modules/app-page/vendored/contexts/entrypoints";
 import Image from "next/image";
 import React, { Component } from 'react';
-export default function Contact() {
+export default function ModalContact() {
     function submitForm(event: any) {
         event.preventDefault(); // Prevents the default form submission
         const name = document && event.target.name.value;
@@ -60,12 +61,12 @@ export default function Contact() {
                 },
                 body: JSON.stringify(data)
             }).then(() => {
-                if (document) {
-                  (document.getElementById('thankyoumodal') as HTMLFormElement).showModal();
-                }
+                closeModal();
+                alert("✨ Thank You, We're excited to reach out to you soon! 😊");
             });
 
         } catch (error) {
+            closeModal();
             alert("Something went wrong, please contact administrator");
         }
 
@@ -77,14 +78,26 @@ export default function Contact() {
         return emailPattern.test(email);
     }
 
+
+    const closeModal = () => {
+        const popupForm = document.querySelector('#popupform') as HTMLInputElement;
+        if (popupForm) {
+            popupForm.checked = false;
+        } else {
+            console.error('Element with id "popupform" not found.');
+        }
+
+    }
+
     return (
         <section className="bg-white" id="contact-us">
-            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>
-                <div className="flex justify-center">
+            <div className="py-2 px-4 mx-auto max-w-screen-md relative">
+                <h2 className="text-3xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>
+                {/* <div className="flex justify-center">
                     <p className="mb-4 lg:mb-4 font-light text-center text-gray-500 sm:text-">Have questions? Reach out for support and guidance on your data science journey!</p>
-                </div>
-                <form action="#" className="space-y-8" onSubmit={submitForm}>
+                    </div> */}
+                <form action="#" className="space-y-4" onSubmit={submitForm}>
+                    <button type="reset" onClick={closeModal}><img src="/cross.svg" className=" absolute right-0 top-0 h-4 w-4" /></button>
                     <div>
                         <label className="block text-sm font-medium text-gray-900">Name</label>
                         <input type="text" id="name" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="John Doe" required />
@@ -99,7 +112,7 @@ export default function Contact() {
                     </div>
                     <div>
                         <label className="block text-sm font-medium text-gray-900">Graduation Year</label>
-                        <select id="graduationYear" onChange={()=>{}} value='2024' className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" required>
+                        <select id="graduationYear" onChange={() => { }} value='2024' className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" required>
                             <option value="" disabled>Select your graduation year</option>
                             {/* <option value="2025">2025</option> */}
                             <option value="2024">2024</option>
@@ -113,19 +126,9 @@ export default function Contact() {
                         <label   className="block mb-2 text-sm font-medium text-gray-900 ">Your message</label>
                         <textarea id="message" rows={6} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="React out to us..."></textarea>
                     </div> */}
-                    <button className="btn btn-neutral">Send Message</button>
+                    <button className="btn btn-neutral mr-4">Send Message</button>
                 </form>
             </div>
-            <dialog id="thankyoumodal" className="modal">
-                <div className="modal-box">
-                    <h3 className="font-bold text-lg">🎉 Thank You!</h3>
-                    <p className="py-4">✨ We're excited to reach out to you soon! 😊</p>
-                </div>
-
-                <form method="dialog" className="modal-backdrop">
-                    <button>close</button>
-                </form>
-            </dialog>
         </section>
     );
 }

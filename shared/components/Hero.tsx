@@ -43,7 +43,7 @@ export default function Hero() {
 
             <input type="checkbox" id="popupform" className="modal-toggle" />
             <div className="modal" role="dialog">
-                <div className="modal-box max-w-2xl">
+                <div className="modal-box rounded-md max-w-2xl p-0">
                     <ModalContact />
                 </div>
             </div>

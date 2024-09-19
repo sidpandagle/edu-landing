@@ -15,7 +15,7 @@ export default function Hero() {
     }, [])
 
     return (
-        <section className=" md:bg-[url('/creative.png')] bg-cover bg-top py-4 md:mb-8">
+        <section className=" md:bg-[url('/collegegirl.jpeg')] bg-cover bg-[center_top_-2.2rem] py-4 md:mb-8">
             <div className="flex gap-8 md:flex-rowitems-center justify-center text-neutral py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
                 <div className="md:w-2/5 h-full">
                     <h1 className=" text-3xl font-extrabold pb-4">

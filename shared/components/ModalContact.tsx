@@ -90,7 +90,7 @@ export default function ModalContact() {
     }
 
     return (
-        <section className="bg-white w-full relative" id="contact-us">
+        <section className="bg-white w-full relative">
             {/* <img src="/people/maleright.jpg" className="h-[200px] top-0 object-cover mb-4" alt="designer" height={100} width={700} /> */}
             <img src="/people/maleright.jpg" className="h-[215px] top-0 object-cover mb-4" alt="designer" height={100} width={700} />
             <div className="absolute top-0 h-[200px] w-3/4 md:w-3/5 p-4 md:p-8 flex flex-col gap-4">

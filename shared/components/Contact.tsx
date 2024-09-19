@@ -78,7 +78,7 @@ export default function Contact() {
     }
 
     return (
-        <section className="bg-white" id="contact-us">
+        <section className="bg-white" id="contact">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>
                 <div className="flex justify-center">

@@ -13,7 +13,7 @@ export default function NavBar() {
                     <a href="/#skills" className="cursor-pointer text-slate-600 hover:font-semibold duration-200 hover:text-slate-800 w-20 text-center">Skills</a>
                     <a href="/#certification" className="cursor-pointer text-slate-600 hover:font-semibold duration-200 hover:text-slate-800 w-20 text-center">Certification</a>
                 </div>
-                <a href="/#contact-us" className="hidden md:flex cursor-pointer text-slate-600 hover:font-semibold duration-200 hover:text-slate-800 w-24 text-center">Contact Us</a>
+                <a href="/#contact" className="hidden md:flex cursor-pointer text-slate-600 hover:font-semibold duration-200 hover:text-slate-800 w-24 text-center">Contact Us</a>
                 <div className="dropdown dropdown-end md:hidden z-20">
                     <div tabIndex={0} role="button" className="btn m-1">///</div>
                     <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
@@ -21,7 +21,7 @@ export default function NavBar() {
                         <li><a href="/#milestones" className="cursor-pointer ">Milestones</a></li>
                         <li><a href="/#skills" className="cursor-pointer ">Skills</a></li>
                         <li><a href="/#certification" className="cursor-pointer ">Certification</a></li>
-                        <li><a href="/#contact-us" className="md:flex cursor-pointer ">Contact Us</a></li>
+                        <li><a href="/#contact" className="md:flex cursor-pointer ">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
